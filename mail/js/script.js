@@ -13,13 +13,19 @@ console.log(listaMail);
 else {
   alert("Tu non puoi passare!!!")
 }*/
+var mailTrovata = false;
 
 for (var i = 0; i < listaMail.length; i++) {
+
   if (mailUtente == listaMail[i]) {
-    alert("Benvenuto!")
+    mailTrovata = true;
   }
-  else {
-    alert("Tu non puoi passare!")
-  }
+}
+
+if (mailTrovata == true) {
+  alert("Benvenuto!")
+}
+else {
+  alert("Tu non puoi passare!")
 }
 // Stampare il messaggio se mail corretta

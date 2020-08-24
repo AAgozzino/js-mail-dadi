@@ -6,10 +6,20 @@ var mailUtente = prompt("Inserisci la tua mail")
 var listaMail = ["anna@gmail.com", "elisabetta@gmail.com", "enrico@gmail.com", "samuele@gmail.com", "pippo@gmail.com"];
 console.log(listaMail);
 // Confrontare la mail con quelle presenti nella lista
-if (listaMail.includes(mailUtente)) {
+
+/*if (listaMail.includes(mailUtente)) {
   alert("Benvenuto!");
 }
 else {
   alert("Tu non puoi passare!!!")
+}*/
+
+for (var i = 0; i < listaMail.length; i++) {
+  if (mailUtente == listaMail[i]) {
+    alert("Benvenuto!")
+  }
+  else {
+    alert("Tu non puoi passare!")
+  }
 }
 // Stampare il messaggio se mail corretta
